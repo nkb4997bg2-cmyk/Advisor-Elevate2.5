@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>AdvisorElevate – AI Intelligence for Human Advisors</title>
+  <meta name="description" content="AdvisorElevate is an AI-powered intelligence layer for financial advisors: pricing, ops panel, trust portal, predictive ARR, recession radar, and AI SDR." />
+  <meta name="theme-color" content="#00c4ff" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="ae-header container">
+    <div class="logo">AdvisorElevate</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="/trust.html">Trust</a>
+      <a href="/ops.html">Ops Panel</a>
+      <a href="#" onclick="openPortal();return false;">Portal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <h1>AI Intelligence Infrastructure for Human Advisors</h1>
+        <p class="sub">
+          Real-time insights, predictive ARR, recession radar, AI SDR, and a full trust layer – built to enhance advisors, not replace them.
+        </p>
+        <div class="hero-btns">
+          <button class="cta" onclick="scrollToSection('pricing')">View Pricing</button>
+          <button class="cta ghost" onclick="openPortal()">Launch Portal</button>
+        </div>
+      </div>
+      <div class="holo-preview">
+        <div class="holo-core">
+          <div class="holo-ring"></div>
+          <div class="holo-ring ring2"></div>
+          <div class="holo-glow"></div>
+          <span class="holo-label">AE Core</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Everything Advisors Need – In One System</h2>
+      <p class="sub">
+        AdvisorElevate acts as the intelligence layer under your CRM, email, and content tools.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>AI Core Engine</h3>
+          <p>Central decision layer powering content, SDR, pricing guidance, and engagement scoring.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Predictive ARR Mode</h3>
+          <p>Forecast subscriptions, pipeline value, and growth scenarios in a single panel.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Recession Radar</h3>
+          <p>Macro indicators, probability tracking, and a simple playbook for tightening or leaning in.</p>
+        </div>
+        <div class="feature-card">
+          <h3>AI SDR System</h3>
+          <p>Lightweight outbound engine to qualify, nurture, and book meetings while you stay in control.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Compliance & Trust</h3>
+          <p>Ethics log, fairness checks, and a hash-backed ledger for verifiable AI decisions.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Advisor Network Ready</h3>
+          <p>Built to extend into a verified advisor directory and private network when you scale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing container">
+      <h2>Pricing</h2>
+      <p class="sub">Start free. Scale when the system proves its value.</p>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Freemium</h3>
+          <div class="price">$0</div>
+          <ul>
+            <li>AI Concierge (Lite)</li>
+            <li>3 generations/day</li>
+            <li>Basic dashboard</li>
+          </ul>
+          <button class="cta" onclick="openPortal()">Start Free</button>
+        </div>
+        <div class="price-card active">
+          <h3>Starter</h3>
+          <div class="price">$49/mo</div>
+          <ul>
+            <li>Full content engine</li>
+            <li>Predictive Mode (Lite)</li>
+            <li>Basic compliance view</li>
+          </ul>
+          <button class="cta" onclick="subscribe('starter')">Choose Starter</button>
+        </div>
+        <div class="price-card">
+          <h3>Pro</h3>
+          <div class="price">$199/mo</div>
+          <ul>
+            <li>AI SDR system</li>
+            <li>Recession Radar</li>
+            <li>ARR forecast tools</li>
+          </ul>
+          <button class="cta" onclick="subscribe('pro')">Choose Pro</button>
+        </div>
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <ul>
+            <li>White-label</li>
+            <li>Deep integrations</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="cta ghost" onclick="contactSales()">Talk to Sales</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© AdvisorElevate. Intelligence infrastructure for human advisors.</p>
+    </div>
+  </footer>
+
+  <!-- Login / Portal Modal -->
+  <div id="portal-gate" class="modal hidden">
+    <div class="modal-box">
+      <h3>Sign in to AdvisorElevate</h3>
+      <input id="login-email" type="email" placeholder="Work email" />
+      <input id="login-pass" type="password" placeholder="Password" />
+      <div class="modal-actions">
+        <button class="cta" onclick="login()">Continue</button>
+        <button class="cta ghost" onclick="closePortal()">Cancel</button>
+      </div>
+      <p class="modal-note">Demo login: demo@ae.com / demo</p>
+    </div>
+  </div>
+
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/auth.js"></script>
+  <script src="/scripts/predictive.js"></script>
+  <script src="/scripts/recession.js"></script>
+  <script src="/scripts/sdr.js"></script>
+</body>
+</html>

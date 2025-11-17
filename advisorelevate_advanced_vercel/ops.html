@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AdvisorElevate Ops Panel</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+</head>
+<body class="ops-body">
+  <header class="ae-header container">
+    <div class="logo">AdvisorElevate Ops</div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/trust.html">Trust</a>
+    </nav>
+  </header>
+  <main class="container ops-main">
+    <h1>AI Ops & Intelligence Control</h1>
+    <div class="ops-grid">
+      <section class="ops-card">
+        <h2>Predictive ARR Mode</h2>
+        <button class="cta" onclick="runPredictiveDemo()">Run Forecast</button>
+        <pre id="predictive-output">Waiting…</pre>
+      </section>
+      <section class="ops-card">
+        <h2>Recession Radar</h2>
+        <button class="cta" onclick="runRecessionDemo()">Fetch Snapshot</button>
+        <pre id="recession-output">Waiting…</pre>
+      </section>
+      <section class="ops-card">
+        <h2>AI SDR Activity</h2>
+        <button class="cta" onclick="runSdrDemo()">Simulate SDR Event</button>
+        <pre id="sdr-output">Waiting…</pre>
+      </section>
+    </div>
+  </main>
+  <script src="/scripts/ops.js"></script>
+</body>
+</html>
